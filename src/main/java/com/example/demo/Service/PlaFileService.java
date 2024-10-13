@@ -1,6 +1,7 @@
 package com.example.demo.Service;
 
 import java.io.IOException;
+
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
@@ -63,7 +64,7 @@ public class PlaFileService {
         Files.write(Paths.get("C:/Users/rayen/Desktop/PLA/EDIDIVERS_"+dateSaisie +".txt"), sb.toString().getBytes());
     }
 
-    private static String formatDate(Date date) {
+    public static String formatDate(Date date) {
         // Implement the date formatting logic here
         return String.format("%1$tY%1$tm%1$td%1$tH%1$tM", date);
     }
